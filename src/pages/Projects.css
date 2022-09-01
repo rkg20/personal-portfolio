@@ -1,0 +1,43 @@
+.projects{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects .title{
+    text-align: center;
+    color: #3e497a;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.projects-list{
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+
+
+@media only screen and (max-width:900px) {
+    .title{
+        font-size: 25px;
+    }
+    .projects-list{
+        width: 85vw;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .projects-list{
+        width: 100vw;
+        grid-template-columns: 1fr;
+    }
+    
+}
